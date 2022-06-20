@@ -11,32 +11,23 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :firstname, style: "display: block" %>
-    <%= form.text_field :firstname %>
-  </div>
-
-  <div>
-    <%= form.label :lastname, style: "display: block" %>
-    <%= form.text_field :lastname %>
-  </div>
-
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div>
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
-  </div>
-
-  <div>
-    <%= form.label :twitter, style: "display: block" %>
-    <%= form.text_field :twitter %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
+  <form>
+    <div class="mb-3">
+      <%= form.label :firstname, class: "form-label" %>
+      <%= form.text_field :firstname, class: "form-control"%>
+    </div>
+    <div class="mb-3">
+      <%= form.label :lastname, class: "form-label" %>
+      <%= form.text_field :lastname, class: "form-control"%>
+    </div>
+    <div class="mb-3">
+      <%= form.label :email, class: "form-label" %>
+      <%= form.text_field :email, class: "form-control"%>
+    </div>
+    <div class="mb-3">
+      <%= form.label :twitter, class: "form-label" %>
+      <%= form.text_field :twitter, class: "form-control"%>
+    </div>
+    <%= form.submit class: "btn btn-success" %>
+  </form>
 <% end %>
